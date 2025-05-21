@@ -90,3 +90,22 @@ if (word1.length > word2.length) {
 
 // mod. linea 69 con:
 //  if(word.lenght > 0)
+
+
+console.log('Snack 3')
+
+// Soluzione mia
+
+const numeri = []
+
+while (numeri.length !== 10) {
+
+  const numero = prompt('Inserisci un numero');
+
+  if (!isNaN(numero))
+    numeri.push(numero)
+
+}
+
+console.log(numeri)
+console.log(numeri[0 + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9])
