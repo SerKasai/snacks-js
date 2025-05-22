@@ -186,3 +186,8 @@ console.log(arrayDispari)
 console.log('Snack 6')
 // Stampa il cubo dei primi N numeri,
 // dove N è un numero indicato dall'utente.
+
+// Soluzione mia
+
+const numcub = parseInt(prompt('Inserisci un numero'))
+console.log(`Il cubo di ${numcub} è (${numcub ** 3})`)
