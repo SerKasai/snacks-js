@@ -1,4 +1,5 @@
 console.log('Snack 1')
+// L'utente inserisce due numeri, il computer stampa il più grande
 
 // Soluzione mia
 
@@ -57,6 +58,8 @@ if (num1 > num2) {
 
 
 console.log('Snack 2')
+// L'utente inserisce due parole in successione, con due prompt.
+// Il software stampa prima la parola più corta, poi quella più lunga.
 
 // Soluzione mia
 
@@ -93,6 +96,8 @@ if (word1.length > word2.length) {
 
 
 console.log('Snack 3')
+// Il software deve chiedere per 10 volte all'utente di inserire un numero.
+// Il programma stampa la somma di tutti i numeri inseriti.
 
 // Soluzione mia
 
@@ -111,3 +116,43 @@ while (numeri.length !== 10) {
 
 console.log(numeri)
 console.log(sum)
+
+
+console.log('Snack 4')
+// In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby.
+// Chiedere all'utente il suo nome e comunicargli se può partecipare o no alla festa.
+
+// Soluzione mia
+
+const nomeInvitato = prompt('Qual è il tuo nome?')
+console.log(nomeInvitato)
+
+const invitati = [
+  'Marco',
+  'Giuseppe',
+  'Leonardo',
+  'Vincenzo',
+  'Sergio',
+  'Francesco',
+  'Rosario'
+];
+
+for (let i = 0; i < invitati.length; i++) {
+  console.log(i, invitati[i])
+  const invitiRegistrati = invitati[i]
+
+  if (nomeInvitato == invitiRegistrati) {
+    login = true
+  } else {
+    login = false
+  }
+}
+
+if (login) {
+  alert('Benvenuto, la satavamo aspettando!')
+} else {
+  alert('Mi dispiace, non è in lista')
+}
+
+console.log(invitati, nomeInvitato)
+
