@@ -207,9 +207,11 @@ console.log('Snack 8')
 // Chiedi un numero di 4 cifre all'utente e calcola la somma di
 // tutte le cifre che compongono il numero.
 
-const fourNum = parseInt(prompt('SETTIMO SNACK: Inserisci un numero di quattro cifre'))
-const singleNum = fourNum.split("")
-console.log(singleNum)
-console.log(singleNum[1] + [2] + [3] + [4])
+// const fourNum = parseInt(prompt('SETTIMO SNACK: Inserisci un numero di quattro cifre'))
+// const singleNum = fourNum.split("")
+// console.log(singleNum)
+// console.log(singleNum[1] + [2] + [3] + [4])
 
 
+console.log('Snack 9')
+// Calcola la somma e la media dei primi 10 numeri
