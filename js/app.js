@@ -156,3 +156,33 @@ if (login) {
 
 console.log(invitati, nomeInvitato)
 
+
+console.log('Snack 5')
+// Crea un array vuoto. Chiedi per 6 volte all'utente di inserire un numero.
+// Se è dispari inseriscilo nell'array.
+
+// Soluzione mia
+
+const arrayVuoto = []
+const arrayDispari = []
+
+
+while (arrayVuoto.length !== 6) {
+
+  const num = parseInt(prompt('Inserisci un numero'));
+  if (!isNaN(num))
+    arrayVuoto.push(num)
+
+  console.log(num);
+
+  if (!isNaN(num) && (num % 2))
+    arrayDispari.push(num)
+}
+
+console.log(arrayVuoto)
+console.log(arrayDispari)
+
+
+console.log('Snack 6')
+// Stampa il cubo dei primi N numeri,
+// dove N è un numero indicato dall'utente.
