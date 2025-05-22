@@ -98,14 +98,16 @@ console.log('Snack 3')
 
 const numeri = []
 
+let sum = 0
+
 while (numeri.length !== 10) {
 
-  const numero = prompt('Inserisci un numero');
+  const numero = parseInt(prompt('Inserisci un numero'));
 
   if (!isNaN(numero))
     numeri.push(numero)
-
+  sum += numero
 }
 
 console.log(numeri)
-console.log(numeri[0 + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9])
+console.log(sum)
