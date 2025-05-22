@@ -3,7 +3,7 @@ console.log('Snack 1')
 
 // Soluzione mia
 
-const num1 = parseFloat(prompt('Inserisci un numero'))
+const num1 = parseFloat(prompt('PRIMO SNACK: Inserisci un numero'))
 if (isNaN(num1))
   alert('Errore: Non hai inserito un numero')
 
@@ -67,7 +67,7 @@ const words = []
 
 while (words.length !== 2) {
 
-  const word = prompt('Inserisci una parola');
+  const word = prompt('SECONDO SNACK: Inserisci una parola');
 
   if (isNaN(word))
 
@@ -107,7 +107,7 @@ let sum = 0
 
 while (numeri.length !== 10) {
 
-  const numero = parseInt(prompt('Inserisci un numero'));
+  const numero = parseInt(prompt('TERZO SNACK: Inserisci un numero'));
 
   if (!isNaN(numero))
     numeri.push(numero)
@@ -124,7 +124,7 @@ console.log('Snack 4')
 
 // Soluzione mia
 
-const nomeInvitato = prompt('Qual è il tuo nome?')
+const nomeInvitato = prompt('QUARTO SNACK: Qual è il tuo nome?')
 console.log(nomeInvitato)
 
 const invitati = [
@@ -169,7 +169,7 @@ const arrayDispari = []
 
 while (arrayVuoto.length !== 6) {
 
-  const num = parseInt(prompt('Inserisci un numero'));
+  const num = parseInt(prompt('QUINTO SNACK: Inserisci un numero'));
   if (!isNaN(num))
     arrayVuoto.push(num)
 
@@ -189,5 +189,27 @@ console.log('Snack 6')
 
 // Soluzione mia
 
-const numcub = parseInt(prompt('Inserisci un numero'))
+const numcub = parseInt(prompt('SESTO SNACK: Inserisci un numero'))
 console.log(`Il cubo di ${numcub} è (${numcub ** 3})`)
+
+
+console.log('Snack 7')
+// Stampa le potenze di 2 fino a 1000
+
+// Soluzione mia
+
+for (let j = 0; j <= 1000; j++) {
+  console.log(j ** 2)
+}
+
+
+console.log('Snack 8')
+// Chiedi un numero di 4 cifre all'utente e calcola la somma di
+// tutte le cifre che compongono il numero.
+
+const fourNum = parseInt(prompt('SETTIMO SNACK: Inserisci un numero di quattro cifre'))
+const singleNum = fourNum.split("")
+console.log(singleNum)
+console.log(singleNum[1] + [2] + [3] + [4])
+
+
