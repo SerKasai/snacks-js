@@ -95,6 +95,7 @@ if (word1.length > word2.length) {
 //  if(word.lenght > 0)
 
 
+
 console.log('Snack 3')
 // Il software deve chiedere per 10 volte all'utente di inserire un numero.
 // Il programma stampa la somma di tutti i numeri inseriti.
@@ -118,14 +119,44 @@ console.log(numeri)
 console.log(sum)
 
 
+// Soluzione corso (WHILE)
+
+// let i = 0
+// let somma = 0
+
+// while ( i < 10 ){
+// i++;
+// const num = parseFloat(prompt('Inserisci un numero'))
+// console.log(num)
+
+// if (isNan(num)){
+// somma += num
+// }
+
+// console.log(somma)
+// }
+
+
+// Soluzione corso (FOR)
+
+// for (let i = 0; i < 10; i++) {
+
+//   const num = parseFloat(prompt('Inserisci un numero'))
+
+//   if (isNaN(num)) {
+//     somma += num
+//   }
+// }
+
+// console.log(somma)
+
+
+
 console.log('Snack 4')
 // In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby.
 // Chiedere all'utente il suo nome e comunicargli se può partecipare o no alla festa.
 
 // Soluzione mia
-
-const nomeInvitato = prompt('QUARTO SNACK: Qual è il tuo nome?')
-console.log(nomeInvitato)
 
 const invitati = [
   'Marco',
@@ -137,14 +168,16 @@ const invitati = [
   'Rosario'
 ];
 
+const nomeInvitato = prompt('QUARTO SNACK: Qual è il tuo nome?')
+console.log(nomeInvitato)
+let login = false
+
 for (let i = 0; i < invitati.length; i++) {
   console.log(i, invitati[i])
   const invitiRegistrati = invitati[i]
 
-  if (nomeInvitato == invitiRegistrati) {
+  if (nomeInvitato === invitiRegistrati) {
     login = true
-  } else {
-    login = false
   }
 }
 
@@ -155,6 +188,41 @@ if (login) {
 }
 
 console.log(invitati, nomeInvitato)
+
+
+// Soluzione corso
+
+// const invitati = [
+//   'Marco',
+//   'Giuseppe',
+//   'Leonardo',
+//   'Vincenzo',
+//   'Sergio',
+//   'Francesco',
+//   'Rosario'
+// ];
+
+// const uName = prompt('Inserisci il tuo nome').trim()
+
+// console.log(uName)
+// let trovato = false;
+
+// for (let i = 0; i < invitati.length; i++) {
+//   const name = invitati[i]
+
+//   if (uName.toLowerCase() === name.toLowerCase()) {
+//     console.log('Trovato!')
+//     trovato = true
+//   }
+// }
+
+// if (trovato) {
+//   console.log('Puoi entrare')
+// } else {
+//   console.log('Se ne vada')
+// }
+
+
 
 
 console.log('Snack 5')
@@ -183,6 +251,23 @@ console.log(arrayVuoto)
 console.log(arrayDispari)
 
 
+// Soluzione corso
+
+// const nums = [];
+
+// for (let i = 0; i < 6; i++) {
+//   const num = parseFloat(prompt('Inserisci un numero'));
+//   console.log(num)
+
+//   if (num % 2 === 1) {
+//     nums.push(num)
+//   }
+// }
+
+// console.log(nums)
+
+
+
 console.log('Snack 6')
 // Stampa il cubo dei primi N numeri,
 // dove N è un numero indicato dall'utente.
@@ -191,6 +276,29 @@ console.log('Snack 6')
 
 const numcub = parseInt(prompt('SESTO SNACK: Inserisci un numero'))
 console.log(`Il cubo di ${numcub} è (${numcub ** 3})`)
+
+
+// Soluzione corso
+
+// const num = parseInt(prompt('Inserisci un numero'));
+
+// console.log(num)
+
+// if (num >= 0) {
+
+//   for (let i = 0; i <= num; i++) {
+
+//     // Math.pow(i,3) --> ALTERNATIVA
+//     console.log(i ** 3)
+//   }
+// } else {
+
+//   for (let i = 0; i >= num; i--) {
+
+//     console.log(i ** 3)
+//   }
+// }
+
 
 
 console.log('Snack 7')
@@ -203,15 +311,71 @@ for (let j = 0; j <= 1000; j++) {
 }
 
 
+// Soluzione corso (METODO ALTERNATIVO)
+
+// for (let j = 0; j ** 2 <= 1000; j++) {
+//   console.log(j ** 2)
+// }
+
+
+
 console.log('Snack 8')
 // Chiedi un numero di 4 cifre all'utente e calcola la somma di
 // tutte le cifre che compongono il numero.
 
-// const fourNum = parseInt(prompt('SETTIMO SNACK: Inserisci un numero di quattro cifre'))
-// const singleNum = fourNum.split("")
-// console.log(singleNum)
-// console.log(singleNum[1] + [2] + [3] + [4])
+// Soluzione corso
+
+let num4cifre;
+
+do {
+  num4cifre = prompt('OTTAVO SNACK: Inserisci un numero di 4 cifre.')
+
+} while (num4cifre.length !== 4 || isNaN(num4cifre))
+
+console.log(num4cifre)
+// console.log([...num4cifre]) --> ALTERNATIVA
+const chars = num4cifre.split('');
+
+console.log(chars)
+
+
+// ESEMPI USO SPLIT
+
+// const paragraph = 'Lorem ipsum dolor sit amet...';
+// const date = 12 /02 / 1968;
+// console.log(paragraph.split(' '));
+// console.log(date.split('/'));
+
+let somma = 0
+
+for (let k = 0; k < chars.length; k++) {
+  const num4cifre = parseInt(chars[k]);
+  console.log(num4cifre)
+  somma += num4cifre
+
+}
+
+console.log(somma)
 
 
 console.log('Snack 9')
 // Calcola la somma e la media dei primi 10 numeri
+
+// Soluzione corso
+
+// somma = num1 + num2 + num3
+// media = (num1 + num2 + num3) / n (NUMERO DEI NUMERI CHE COMPONGONO LA SOMMA)
+
+const nMax = 10;
+let sommina = 0
+let media = 0;
+
+for (let x = 1; x <= nMax; x++) {
+
+  //const numerino = i;
+  sommina += i;
+  media = sommina / i;
+}
+
+// media = sommina / nMax --> ALTERNATIVA
+console.log(sommina, media)
